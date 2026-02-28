@@ -9,7 +9,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6, y: [0, 40, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute w-[700px] h-[700px] bg-purple-600 rounded-full blur-[200px]"
+        className="absolute w-175 h-175 bg-purple-600 rounded-full blur-[200px]"
       />
 
       <div className="relative z-10 max-w-6xl">

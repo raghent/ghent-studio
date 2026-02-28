@@ -1,5 +1,6 @@
 import Hero from "./sections/Hero"
 import Story from "./sections/Story"
+import Work from "./sections/Work"
 import Services from "./sections/Services"
 import Pricing from "./sections/Pricing"
 import Process from "./sections/Process"
@@ -10,6 +11,7 @@ function App() {
     <div className="bg-black text-white">
       <Hero />
       <Story />
+      <Work />
       <Services />
       <Pricing />
       <Process />
