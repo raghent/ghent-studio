@@ -37,7 +37,7 @@ export default function Work() {
                 SaaS Concept · In Development
               </p>
             </div>
-          </motion.div.div>
+          </motion.div>
 
           {/* NotNewButYou */}
           <motion.div
@@ -47,7 +47,7 @@ export default function Work() {
             transition={{ duration: 0.8 }}
             className="group cursor-pointer"
 >
-            <motion.div className="relative border border-white/10 rounded-2xl p-12 transition duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(168,85,247,0.15)]">
+            <div className="relative border border-white/10 rounded-2xl p-12 transition duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(168,85,247,0.15)]">
               <h3 className="text-3xl font-semibold mb-4">
                 NotNewButYou
               </h3>
@@ -57,8 +57,8 @@ export default function Work() {
               <p className="mt-6 text-sm uppercase tracking-wide text-gray-500">
                 Ecommerce Concept · In Development
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
 
         </div>
 
