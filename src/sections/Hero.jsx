@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 1 }}
           className="mt-6 text-xl text-gray-400"
         >
-          We design and engineer cinematic digital experiences that elevate brands beyond the ordinary.
+          We design and engineer cinematic digital experiences that elevate brands beyond the <span className="whitespace-nowrap">ordinary.</span>
         </motion.p>
 
         {/* CTA Buttons */}
