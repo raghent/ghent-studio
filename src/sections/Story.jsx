@@ -47,7 +47,7 @@ export default function Story() {
 
       <h2 className="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
         {splitWords(
-          "Studio 70 West builds cinematic digital experiences that feel engineered, not assembled."
+          "Ghent Studio designs and engineers digital experiences that feel immersive, intentional, and distinctly premium."
         )}
       </h2>
     </section>
