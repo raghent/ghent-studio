@@ -44,3 +44,7 @@ body {
   filter: blur(80px);
   transition: transform 0.15s ease-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}
