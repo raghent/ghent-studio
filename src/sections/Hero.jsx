@@ -33,7 +33,8 @@ export default function Hero() {
 >
            We design and engineer cinematic digital experiences
            <br className="hidden md:block" />
-           that elevate brands beyond the ordinary.
+           that elevate brands
+           <span className="text-white"> beyond the ordinary.</span>
         </motion.p>
 
         {/* CTA Buttons */}
