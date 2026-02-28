@@ -6,11 +6,15 @@ export default function Work() {
     >
       <div className="max-w-6xl mx-auto">
 
+        <p className="text-sm uppercase tracking-widest text-gray-500 mb-6">
+          Selected Projects
+        </p>
+
         <h2 className="text-4xl md:text-6xl font-bold mb-20">
           Featured Work
         </h2>
 
-        <div className="space-y-24">
+        <div className="space-y-32">
 
           {/* NeonRoute */}
           <div className="group cursor-pointer">
@@ -29,7 +33,7 @@ export default function Work() {
 
           {/* NotNewButYou */}
           <div className="group cursor-pointer">
-            <div className="border border-white/10 rounded-2xl p-12 hover:border-white/30 transition duration-500">
+            <div className="relative border border-white/10 rounded-2xl p-12 transition duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(168,85,247,0.15)]">
               <h3 className="text-3xl font-semibold mb-4">
                 NotNewButYou
               </h3>
