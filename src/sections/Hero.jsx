@@ -26,12 +26,14 @@ export default function Hero() {
 
         {/* Subheadline */}
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 1 }}
-          className="mt-6 text-xl text-gray-400 leading-relaxed max-w-4xl mx-auto"
-        >
-          We design and engineer cinematic digital experiences that elevate brands beyond the <span className="lg:whitespace-nowrap">ordinary.</span>
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{ delay: 0.6, duration: 1 }}
+           className="mt-6 text-xl text-gray-400 leading-relaxed max-w-4xl mx-auto"
+>
+           We design and engineer cinematic digital experiences
+           <br className="hidden md:block" />
+           that elevate brands beyond the ordinary.
         </motion.p>
 
         {/* CTA Buttons */}
