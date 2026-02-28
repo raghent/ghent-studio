@@ -12,7 +12,7 @@ export default function Hero() {
         className="absolute w-[700px] h-[700px] bg-purple-600 rounded-full blur-[200px]"
       />
 
-      <div className="relative z-10 max-w-5xl">
+      <div className="relative z-10 max-w-6xl">
         
         {/* Headline */}
         <motion.h1
