@@ -45,7 +45,7 @@ export default function Hero() {
           className="mt-12 flex flex-col sm:flex-row gap-8 justify-center"
         >
           <a
-          href="#services"
+          href="#work"
           className="px-10 py-4 border border-white/20 rounded-full text-sm tracking-wide uppercase hover:border-white transition duration-300"
         >
           View Work

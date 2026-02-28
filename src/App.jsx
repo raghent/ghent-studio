@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar"
 import Hero from "./sections/Hero"
 import Story from "./sections/Story"
 import Work from "./sections/Work"
@@ -9,6 +10,7 @@ import Contact from "./sections/Contact"
 function App() {
   return (
     <div className="bg-black text-white">
+      <Navbar />
       <Hero />
       <Story />
       <Work />
