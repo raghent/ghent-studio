@@ -28,8 +28,14 @@ export default function Work() {
           >
             <div className="relative h-[500px] rounded-3xl overflow-hidden border border-white/10">
 
-              {/* Background Gradient Panel */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-700/40 via-black to-black" />
+              {/* Parallax Gradient Background */}
+              <motion.div
+                initial={{ scale: 1.05 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                className="absolute inset-0 bg-gradient-to-br from-purple-700/40 via-black to-black"
+              />
 
               {/* Hover Glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.25),transparent_70%)]" />
@@ -61,8 +67,14 @@ export default function Work() {
           >
             <div className="relative h-[500px] rounded-3xl overflow-hidden border border-white/10">
 
-              {/* Background Gradient Panel */}
-              <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 via-black to-black" />
+              {/* Parallax Gradient Background */}
+              <motion.div
+                initial={{ scale: 1.05 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                className="absolute inset-0 bg-gradient-to-br from-neutral-800 via-black to-black"
+              />
 
               {/* Hover Glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15),transparent_70%)]" />
