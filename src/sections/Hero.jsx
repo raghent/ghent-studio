@@ -42,20 +42,20 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="mt-10 flex flex-col sm:flex-row gap-6 justify-center"
+          className="mt-12 flex flex-col sm:flex-row gap-8 justify-center"
         >
           <a
-            href="#services"
-            className="px-8 py-4 bg-purple-600 rounded-lg font-semibold hover:bg-purple-500 transition"
-          >
-            View Work
+          href="#services"
+          className="px-10 py-4 border border-white/20 rounded-full text-sm tracking-wide uppercase hover:border-white transition duration-300"
+        >
+          View Work
           </a>
 
           <a
-            href="#contact"
-            className="px-8 py-4 border border-neutral-700 rounded-lg font-semibold hover:bg-neutral-800 transition"
-          >
-            Start a Project
+          href="#contact"
+          className="px-10 py-4 border border-white/20 rounded-full text-sm tracking-wide uppercase hover:border-purple-400 transition duration-300"
+        >
+          Start a Project
           </a>
         </motion.div>
 
