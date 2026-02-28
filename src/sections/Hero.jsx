@@ -12,7 +12,7 @@ export default function Hero() {
         className="absolute w-[700px] h-[700px] bg-purple-600 rounded-full blur-[200px]"
       />
 
-      <div className="relative z-10 max-w-4xl">
+      <div className="relative z-10 max-w-5xl">
         
         {/* Headline */}
         <motion.h1
@@ -29,9 +29,9 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="mt-6 text-xl text-gray-400"
+          className="mt-6 text-xl text-gray-400 leading-relaxed max-w-4xl mx-auto"
         >
-          We design and engineer cinematic digital experiences that elevate brands beyond the <span className="whitespace-nowrap">ordinary.</span>
+          We design and engineer cinematic digital experiences that elevate brands beyond the <span className="lg:whitespace-nowrap">ordinary.</span>
         </motion.p>
 
         {/* CTA Buttons */}
