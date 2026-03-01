@@ -6,10 +6,10 @@ export default function Process() {
       </h2>
 
       <div className="space-y-10 text-gray-400 max-w-3xl">
-        <p><strong>01.</strong> Vision & Strategy Call</p>
-        <p><strong>02.</strong> Storyboarding & Concept</p>
-        <p><strong>03.</strong> Build & Animation</p>
-        <p><strong>04.</strong> Launch & Optimization</p>
+        <p><strong>Phase 1.</strong> Vision & Strategy Call</p>
+        <p><strong>Phase 2.</strong> Storyboarding & Concept</p>
+        <p><strong>Phase 3.</strong> Build & Animation</p>
+        <p><strong>Phase 4.</strong> Launch & Optimization</p>
       </div>
     </section>
   )
