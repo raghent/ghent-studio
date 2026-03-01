@@ -14,8 +14,8 @@ export async function onRequestPost(context) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      from: "Ghent Studio <onboarding@resend.dev>",
-      to: "YOUR_EMAIL@gmail.com",
+      from: "onboarding@resend.dev",
+      to: "raghentjr@gmail.com",
       subject: "New Project Inquiry — Ghent Studio",
       html: `
         <h2>New Inquiry</h2>
@@ -27,7 +27,8 @@ export async function onRequestPost(context) {
   })
 
   if (!response.ok) {
-    return new Response("Something went wrong.", { status: 500 })
+    const errorText = await response.text()
+    return new Response("errorText", { status: 500 })
   }
 
   return new Response(
