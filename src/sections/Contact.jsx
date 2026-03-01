@@ -6,7 +6,7 @@ export default function Contact() {
       </h2>
 
       <form
-        action="https://formspree.io/f/YOUR_FORM_ID"
+        action="/api/contact"
         method="POST"
         className="max-w-2xl space-y-6"
       >
@@ -27,7 +27,7 @@ export default function Contact() {
         />
 
         <textarea
-          name="vision"
+          name="message"
           placeholder="Describe your vision. What should your portfolio feel like?"
           rows="6"
           className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
