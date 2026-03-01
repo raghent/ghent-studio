@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
     },
     body: JSON.stringify({
       from: "Ghent Studio <onboarding@resend.dev>",
-      to: "raghentjr@gmail.com",
+      to: "YOUR_EMAIL@gmail.com",
       subject: "New Project Inquiry — Ghent Studio",
       html: `
         <h2>New Inquiry</h2>
@@ -27,8 +27,64 @@ export async function onRequestPost(context) {
   })
 
   if (!response.ok) {
-    return new Response("Error sending email", { status: 500 })
+    return new Response("Something went wrong.", { status: 500 })
   }
 
-  return new Response("Success", { status: 200 })
+  return new Response(
+    `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Message Sent — Ghent Studio</title>
+        <style>
+          body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+          }
+          .container {
+            max-width: 600px;
+          }
+          h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #aaa;
+            margin-bottom: 40px;
+          }
+          a {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #7c3aed, #9333ea);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+          }
+          a:hover {
+            opacity: 0.85;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Message Sent</h1>
+          <p>Thanks ${name}. We’ll review your inquiry and get back to you shortly.</p>
+          <a href="https://ghentstudio.com">Back to Site</a>
+        </div>
+      </body>
+    </html>
+    `,
+    {
+      headers: { "Content-Type": "text/html" }
+    }
+  )
 }
