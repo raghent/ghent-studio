@@ -6,6 +6,11 @@ export async function onRequestPost(context) {
   const name = formData.get("name")
   const email = formData.get("email")
   const message = formData.get("message")
+  const honeypot = formData.get("company")
+
+if (honeypot) {
+  return new Response("Spam detected", { status: 400 })
+}
 
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",

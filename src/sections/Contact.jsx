@@ -10,6 +10,14 @@ export default function Contact() {
         method="POST"
         className="max-w-2xl space-y-6"
       >
+        {/* Honeypot field (hidden from users) */}
+        <input
+          type="text"
+          name="company"
+          className="hidden"
+          autoComplete="off"
+        />
+
         <input
           type="text"
           name="name"
