@@ -6,10 +6,12 @@ import Services from "./sections/Services"
 import Pricing from "./sections/Pricing"
 import Process from "./sections/Process"
 import Contact from "./sections/Contact"
+import { Routes, Route } from "react-router-dom"
+import Success from "./pages/Success"
 
-function App() {
+function Home() {
   return (
-    <div className="bg-black text-white">
+    <>
       <Navbar />
       <Hero />
       <Story />
@@ -18,8 +20,18 @@ function App() {
       <Pricing />
       <Process />
       <Contact />
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <div className="bg-black text-white">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/success" element={<Success />} />
+      </Routes>
     </div>
   )
 }
 
-export default App

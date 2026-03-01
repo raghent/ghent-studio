@@ -32,5 +32,5 @@ export async function onRequestPost(context) {
   }
 
   // Redirect to success page
-  return Response.redirect("https://ghentstudio.com/success.html", 302)
+  return Response.redirect("https://ghentstudio.com/success", 302)
 }
