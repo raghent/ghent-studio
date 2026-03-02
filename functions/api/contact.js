@@ -12,6 +12,29 @@ if (honeypot) {
   return Response.redirect("https://ghentstudio.com/success", { status: 302 })
 }
 
+const turnstileToken = formData.get("cf-turnstile-response")
+
+const verifyResponse = await fetch(
+  "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: new URLSearchParams({
+      secret: env.TURNSTILE_SECRET_KEY,
+      response: turnstileToken,
+      remoteip: request.headers.get("CF-Connecting-IP")
+    })
+  }
+)
+
+const verifyData = await verifyResponse.json()
+
+if (!verifyData.success) {
+  return new Response("Turnstile verification failed", { status: 400 })
+}
+
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {

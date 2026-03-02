@@ -5,6 +5,12 @@ export default function Contact() {
         Start Your Project
       </h2>
 
+      <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+      ></script>
+
       <form
         action="/api/contact"
         method="POST"
@@ -41,6 +47,11 @@ export default function Contact() {
           className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
           required
         />
+
+        <div
+          className="cf-turnstile"
+          data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"
+        ></div>
 
         <button
           type="submit"
