@@ -9,7 +9,7 @@ export async function onRequestPost(context) {
   const honeypot = formData.get("company")
 
 if (honeypot) {
-  return new Response("Spam detected", { status: 400 })
+  return Response.redirect("https://ghentstudio.com/success", { status: 302 })
 }
 
   const response = await fetch("https://api.resend.com/emails", {
