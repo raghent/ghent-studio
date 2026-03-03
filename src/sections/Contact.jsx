@@ -49,8 +49,9 @@ export default function Contact() {
         />
 
         <div
-          className="cf-turnstile"
+          className="cf-turnstile mt-4"
           data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"
+          data-theme="dark"
         ></div>
 
         <button
