@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Hero from "./sections/Hero"
+import Why from "./sections/Why"
 import Work from "./sections/Work"
 import Pricing from "./sections/Pricing"
 import Contact from "./sections/Contact"
@@ -11,6 +12,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <Why />
       <Work />
       <Pricing />
       <Contact />
