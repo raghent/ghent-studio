@@ -35,7 +35,7 @@ export default function Success() {
 
         <button
           onClick={() => navigate("/")}
-          className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-purple-800 font-semibold hover:opacity-90 transition"
+          className="inline-block px-8 py-4 rounded-full bg-linear-to-r from-purple-600 to-purple-800 font-semibold hover:opacity-90 transition"
         >
           Back to Home
         </button>
