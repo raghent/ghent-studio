@@ -47,13 +47,12 @@ export default function Contact() {
           className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
           required
         />
-      <div className="mt-6 p-4 bg-neutral-900 border border-neutral-800 rounded-lg flex justify-center">
-        <div
+         <div
           className="cf-turnstile"
           data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"
           data-theme="dark"
         ></div>
-      </div>
+     
 
         <button
           type="submit"
