@@ -57,7 +57,7 @@ export default function Contact() {
          <div
           className="cf-turnstile"
           data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"
-          data-theme="dark"
+          data-size="invisible"
         ></div>
      
 

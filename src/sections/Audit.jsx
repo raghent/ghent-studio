@@ -43,7 +43,7 @@ export default function Audit() {
             required
           />
 
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAACkmoucvSS1Eakw5" data-theme="dark"></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAACkmoucvSS1Eakw5" data-size="invisible"></div>
 
           <button
             type="submit"
