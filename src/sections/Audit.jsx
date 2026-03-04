@@ -12,6 +12,8 @@ export default function Audit() {
           to improve presentation, structure, and performance.
         </p>
 
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
         <form
           action="/api/contact"
           method="POST"
@@ -41,7 +43,7 @@ export default function Audit() {
             required
           />
 
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAACkmoucvSS1Eakw5" data-theme="dark"></div>
 
           <button
             type="submit"
