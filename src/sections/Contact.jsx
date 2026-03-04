@@ -1,6 +1,13 @@
+import { useRef } from "react"
+import useScrollAnimation from "../animations/useScrollAnimation"
+
 export default function Contact() {
+
+  const sectionRef = useRef(null)
+  useScrollAnimation(sectionRef)
+
   return (
-    <section id="contact" className="py-32 px-8 md:px-20 bg-neutral-950 text-white">
+    <section ref={sectionRef} id="contact" className="py-32 px-8 md:px-20 bg-neutral-950 text-white">
       <h2 className="text-4xl md:text-6xl font-bold mb-16">
         Start Your Project
       </h2>

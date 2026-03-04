@@ -1,8 +1,13 @@
 import { motion } from "framer-motion"
+import { useRef } from "react"
+import useScrollAnimation from "../animations/useScrollAnimation"
 
 export default function Why() {
+
+    const sectionRef = useRef(null)
+    useScrollAnimation(sectionRef)
   return (
-    <section className="py-32 px-8 md:px-20 bg-black text-white">
+    <section ref={sectionRef} className="py-32 px-8 md:px-20 bg-black text-white">
       <div className="max-w-6xl mx-auto">
 
         <motion.div
