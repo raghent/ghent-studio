@@ -5,7 +5,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <img
-          src="/logo.svg"
+          src="/logo.png"
           alt="Ghent Studio"
          className="w-8 h-8"
          />
