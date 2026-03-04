@@ -52,7 +52,7 @@ export default function Hero() {
   <ParticleField />
 
   <div className="relative z-10">
-     hero content
+     
   </div>
 </section>
 
