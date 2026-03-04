@@ -3,7 +3,7 @@ import ParticleField from "../components/ParticleField"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
+    <section className="relative pt-32 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
 
       {/* Ambient Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.12),transparent_70%)]" />
