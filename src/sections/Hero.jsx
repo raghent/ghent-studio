@@ -14,7 +14,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
         >
           Portfolio websites that elevate your work.
         </motion.h1>
@@ -36,14 +36,14 @@ export default function Hero() {
         >
           <a
             href="#work"
-            className="px-8 py-4 rounded-full bg-linear-to-r from-purple-600 to-purple-800 font-semibold hover:opacity-90 transition"
+            className="px-8 py-4 bg-purple-600 rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(168,85,247,0.35)] hover:bg-purple-500"
           >
             View Work
           </a>
 
           <a
             href="#contact"
-            className="px-8 py-4 rounded-full border border-neutral-700 hover:border-neutral-500 transition"
+            className="px-8 py-4 border border-neutral-700 rounded-full transition-all duration-300 hover:-translate-y-1 hover:border-purple-500 hover:text-white"
           >
             Start a Project
           </a>

@@ -49,7 +49,7 @@ export default function Pricing() {
             </ul>
             <a
               href="#contact"
-              className="block text-center px-6 py-3 border border-neutral-700 rounded-full hover:border-neutral-500 transition"
+              className="px-8 py-4 border border-neutral-700 rounded-full transition-all duration-300 hover:-translate-y-1 hover:border-purple-500 hover:text-white"
             >
               Start a Project
             </a>
@@ -77,7 +77,7 @@ export default function Pricing() {
             </ul>
             <a
               href="#contact"
-              className="block text-center px-6 py-3 bg-linear-to-r from-purple-600 to-purple-800 rounded-full font-semibold hover:opacity-90 transition"
+              className="px-8 py-4 bg-purple-600 rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(168,85,247,0.35)] hover:bg-purple-500"
             >
               Start a Project
             </a>
@@ -105,7 +105,7 @@ export default function Pricing() {
             </ul>
             <a
               href="#contact"
-              className="block text-center px-6 py-3 border border-neutral-700 rounded-full hover:border-neutral-500 transition"
+              className="px-8 py-4 border border-neutral-700 rounded-full transition-all duration-300 hover:-translate-y-1 hover:border-purple-500 hover:text-white"
             >
               Start a Project
             </a>

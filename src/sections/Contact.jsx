@@ -63,7 +63,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="px-8 py-4 bg-purple-600 rounded-lg font-semibold hover:bg-purple-500 transition"
+          className="px-8 py-4 bg-purple-600 rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(168,85,247,0.35)] hover:bg-purple-500"
         >
           Submit Project Inquiry
         </button>
