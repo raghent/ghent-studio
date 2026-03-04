@@ -7,6 +7,7 @@ export async function onRequestPost(context) {
   const email = formData.get("email")
   const message = formData.get("message")
   const honeypot = formData.get("company")
+  const portfolio = formData.get("portfolio") || "Not provided"
 
 if (honeypot) {
   return Response.redirect("https://ghentstudio.com/success", { status: 302 })
@@ -50,6 +51,7 @@ if (!verifyData.success) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong><br/> ${message}</p>
+        Portfolio: ${portfolio}
       `
     })
   })
