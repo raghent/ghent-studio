@@ -67,6 +67,10 @@ export default function Contact() {
         >
           Submit Project Inquiry
         </button>
+
+        <p className="text-xs text-gray-500 mt-3">
+        Protected by Cloudflare Turnstile
+        </p>
       </form>
     </section>
   )

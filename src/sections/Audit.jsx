@@ -51,6 +51,9 @@ export default function Audit() {
           >
             Request Audit
           </button>
+          <p className="text-xs text-gray-500 mt-3">
+           Protected by Cloudflare Turnstile
+         </p>
 
         </form>
 
