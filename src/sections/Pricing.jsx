@@ -72,7 +72,7 @@ export default function Pricing() {
             </ul>
             <a
               href="#contact"
-              className="block text-center px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full font-semibold hover:opacity-90 transition"
+              className="block text-center px-6 py-3 bg-linear-to-r from-purple-600 to-purple-800 rounded-full font-semibold hover:opacity-90 transition"
             >
               Start a Project
             </a>
