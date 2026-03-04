@@ -17,7 +17,7 @@ export default function AmbientGlow() {
   return (
     <div
       ref={glowRef}
-      className="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-purple-600 opacity-20 blur-[220px] rounded-full -z-10"
+      className="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-225 h-225 bg-purple-600 opacity-20 blur-[220px] rounded-full -z-10"
     />
   )
 }
