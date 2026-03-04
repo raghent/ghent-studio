@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import AmbientGlow from "./components/AmbientGlow"
 import Hero from "./sections/Hero"
+import Audience from "./sections/Audience"
 import Why from "./sections/Why"
 import Tech from "./sections/Tech"
 import Work from "./sections/Work"
@@ -17,6 +18,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <Audience />
       <Why />
       <Tech />
       <Work />
