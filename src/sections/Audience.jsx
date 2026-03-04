@@ -1,7 +1,7 @@
 export default function Audience() {
 return ( <section className="py-32 px-8 md:px-20 bg-black text-white">
 
-```
+
   <h2 className="text-4xl md:text-6xl font-bold mb-16">
     Portfolio Websites for Creatives
   </h2>

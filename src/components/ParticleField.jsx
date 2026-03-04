@@ -9,56 +9,64 @@ export default function ParticleField() {
 
     let particles = []
     const particleCount = 60
+    let rafId
 
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+    const resize = () => {
+      // Match the canvas to the element size (not just window)
+      const rect = canvas.getBoundingClientRect()
+      const dpr = window.devicePixelRatio || 1
 
-    for (let i = 0; i < particleCount; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() * 2,
-        vx: Math.random() * 0.3 - 0.15,
-        vy: Math.random() * 0.3 - 0.15
-      })
+      canvas.width = Math.floor(rect.width * dpr)
+      canvas.height = Math.floor(rect.height * dpr)
+      canvas.style.width = `${rect.width}px`
+      canvas.style.height = `${rect.height}px`
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+
+      // Re-seed particles when resizing (keeps it consistent)
+      particles = Array.from({ length: particleCount }, () => ({
+        x: Math.random() * rect.width,
+        y: Math.random() * rect.height,
+        r: Math.random() * 2 + 0.5,
+        vx: Math.random() * 0.25 - 0.125,
+        vy: Math.random() * 0.25 - 0.125,
+      }))
     }
 
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+    const animate = () => {
+      const rect = canvas.getBoundingClientRect()
+      ctx.clearRect(0, 0, rect.width, rect.height)
 
-      particles.forEach(p => {
+      for (const p of particles) {
         p.x += p.vx
         p.y += p.vy
 
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1
+        if (p.x < 0 || p.x > rect.width) p.vx *= -1
+        if (p.y < 0 || p.y > rect.height) p.vy *= -1
 
         ctx.beginPath()
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
-        ctx.fillStyle = "rgba(168,85,247,0.4)"
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
+        ctx.fillStyle = "rgba(168,85,247,0.35)"
         ctx.fill()
-      })
+      }
 
-      requestAnimationFrame(animate)
+      rafId = requestAnimationFrame(animate)
     }
 
+    resize()
     animate()
 
-    const resize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-
     window.addEventListener("resize", resize)
-
-    return () => window.removeEventListener("resize", resize)
-
+    return () => {
+      window.removeEventListener("resize", resize)
+      cancelAnimationFrame(rafId)
+    }
   }, [])
 
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 -z-10"
+      className="absolute inset-0 z-0 pointer-events-none"
     />
   )
 }
