@@ -8,58 +8,53 @@ export default function ParticleField() {
     const ctx = canvas.getContext("2d")
 
     let particles = []
-    const particleCount = 60
-    let rafId
+    const particleCount = 70
 
-    const resize = () => {
-      // Match the canvas to the element size (not just window)
+    function resize() {
       const rect = canvas.getBoundingClientRect()
-      const dpr = window.devicePixelRatio || 1
 
-      canvas.width = Math.floor(rect.width * dpr)
-      canvas.height = Math.floor(rect.height * dpr)
-      canvas.style.width = `${rect.width}px`
-      canvas.style.height = `${rect.height}px`
+      canvas.width = rect.width
+      canvas.height = rect.height
 
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+      particles = []
 
-      // Re-seed particles when resizing (keeps it consistent)
-      particles = Array.from({ length: particleCount }, () => ({
-        x: Math.random() * rect.width,
-        y: Math.random() * rect.height,
-        r: Math.random() * 2 + 0.5,
-        vx: Math.random() * 0.25 - 0.125,
-        vy: Math.random() * 0.25 - 0.125,
-      }))
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 2 + 0.5,
+          vx: Math.random() * 0.3 - 0.15,
+          vy: Math.random() * 0.3 - 0.15
+        })
+      }
     }
 
-    const animate = () => {
-      const rect = canvas.getBoundingClientRect()
-      ctx.clearRect(0, 0, rect.width, rect.height)
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      for (const p of particles) {
+      particles.forEach(p => {
         p.x += p.vx
         p.y += p.vy
 
-        if (p.x < 0 || p.x > rect.width) p.vx *= -1
-        if (p.y < 0 || p.y > rect.height) p.vy *= -1
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1
 
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
-        ctx.fillStyle = "rgba(168,85,247,0.35)"
+        ctx.fillStyle = "rgba(168,85,247,0.5)"
         ctx.fill()
-      }
+      })
 
-      rafId = requestAnimationFrame(animate)
+      requestAnimationFrame(animate)
     }
 
     resize()
     animate()
 
     window.addEventListener("resize", resize)
+
     return () => {
       window.removeEventListener("resize", resize)
-      cancelAnimationFrame(rafId)
     }
   }, [])
 
