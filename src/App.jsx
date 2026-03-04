@@ -4,6 +4,7 @@ import Hero from "./sections/Hero"
 import Why from "./sections/Why"
 import Tech from "./sections/Tech"
 import Work from "./sections/Work"
+import Process from "./sections/Process"
 import Pricing from "./sections/Pricing"
 import Contact from "./sections/Contact"
 import Success from "./pages/Success"
@@ -16,6 +17,7 @@ function Home() {
       <Why />
       <Tech />
       <Work />
+      <Process />
       <Pricing />
       <Contact />
     </>
