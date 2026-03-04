@@ -7,6 +7,7 @@ import Work from "./sections/Work"
 import Process from "./sections/Process"
 import Pricing from "./sections/Pricing"
 import Contact from "./sections/Contact"
+import Footer from "./components/Footer"
 import Success from "./pages/Success"
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <Process />
       <Pricing />
       <Contact />
+      <Footer />
     </>
   )
 }
