@@ -7,7 +7,7 @@ export default function Navbar() {
           <img
           src="/logo.png"
           alt="Ghent Studio"
-         className="w-8 h-8"
+         className="w-8 h-8 transition-transform duration-300 hover:scale-110"
          />
          <span className="font-semibold tracking-wide">
          Ghent Studio
