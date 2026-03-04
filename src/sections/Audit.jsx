@@ -23,7 +23,7 @@ export default function Audit() {
             type="text"
             name="name"
             placeholder="Your Name"
-            className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
+            className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg outline-none transition-all focus:border-purple-500 focus:ring-1 focus:ring-purple-500 placeholder:text-gray-500"
             required
           />
 
@@ -31,7 +31,7 @@ export default function Audit() {
             type="email"
             name="email"
             placeholder="Your Email"
-            className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
+           className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg outline-none transition-all focus:border-purple-500 focus:ring-1 focus:ring-purple-500 placeholder:text-gray-500"
             required
           />
 
@@ -39,7 +39,7 @@ export default function Audit() {
             type="text"
             name="portfolio"
             placeholder="Your Portfolio URL"
-            className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg"
+            className="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-lg outline-none transition-all focus:border-purple-500 focus:ring-1 focus:ring-purple-500 placeholder:text-gray-500"
             required
           />
 
