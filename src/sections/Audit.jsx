@@ -41,6 +41,8 @@ export default function Audit() {
             required
           />
 
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAACkmoucvSS1Eakw5"></div>
+
           <button
             type="submit"
             className="px-8 py-4 bg-purple-600 rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(168,85,247,0.35)] hover:bg-purple-500"
