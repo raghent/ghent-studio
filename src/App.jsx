@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import AmbientGlow from "./components/AmbientGlow"
 import Hero from "./sections/Hero"
 import Why from "./sections/Why"
 import Tech from "./sections/Tech"
@@ -31,6 +32,9 @@ function Home() {
 export default function App() {
   return (
     <div className="bg-black text-white">
+
+      <AmbientGlow />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/success" element={<Success />} />
