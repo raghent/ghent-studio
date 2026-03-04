@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import ParticleField from "../components/ParticleField"
 
 export default function Hero() {
   return (
@@ -47,6 +48,13 @@ export default function Hero() {
             Start a Project
           </a>
         </motion.div>
+        <section className="relative ...">
+  <ParticleField />
+
+  <div className="relative z-10">
+     hero content
+  </div>
+</section>
 
       </div>
     </section>
