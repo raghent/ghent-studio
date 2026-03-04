@@ -33,9 +33,6 @@ function Home() {
 export default function App() {
   return (
     <div className="bg-black text-white">
-
-    
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/success" element={<Success />} />

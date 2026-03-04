@@ -6,13 +6,16 @@ export default function Hero() {
     <section className="relative pt-32 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
 
       {/* Glow Background */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.12),transparent_70%)]" />
+      <div className="absolute inset-0 z-0 pointer-events-none" style={{
+      backgroundImage: "radial-gradient(circle at center, rgba(168,85,247,0.22), transparent 70%)",
+      }}
+       />
 
       {/* Particles */}
       <ParticleField />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl text-center">
+      <div className="relative z-10">
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
