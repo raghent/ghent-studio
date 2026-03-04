@@ -69,7 +69,7 @@ export default function Contact() {
         </button>
 
         <p className="text-xs text-gray-500 mt-3">
-        Protected by Cloudflare Turnstile
+            Protected by Cloudflare Turnstile
         </p>
       </form>
     </section>
