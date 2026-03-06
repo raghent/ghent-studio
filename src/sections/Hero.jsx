@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
         >
-          Portfolio websites that elevate your work.
+          Portfolio websites for modern creatives.
         </motion.h1>
 
         <motion.p
@@ -32,7 +32,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12"
         >
-          Ghent Studio builds cinematic, high-performance websites for modern creatives who refuse to look ordinary.
+          Cinematic, high-performance sites designed to make your work impossible to ignore.
         </motion.p>
 
         <motion.div
