@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import ParticleField from "../components/ParticleField"
+import ParticleField from "..npm run dev/components/ParticleField"
 
 export default function Hero() {
   return (
