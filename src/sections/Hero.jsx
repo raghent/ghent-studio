@@ -1,28 +1,27 @@
 import { motion } from "framer-motion"
-import ParticleField from "./components/ParticleField"
+import ParticleField from "../components/ParticleField"
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-16 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
+    <section className="relative pt-32 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
+
       {/* Glow Background */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at center, rgba(168,85,247,0.22), transparent 70%)",
-        }}
-      />
+      <div className="absolute inset-0 z-0 pointer-events-none" style={{
+      backgroundImage: "radial-gradient(circle at center, rgba(168,85,247,0.22), transparent 70%)",
+      }}
+       />
 
       {/* Particles */}
       <ParticleField />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center max-w-6xl mx-auto">
+      <div className="relative z-10">
+
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
+          className="md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
         >
           Portfolio websites for modern creatives.
         </motion.h1>
@@ -31,16 +30,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="max-w-2xl text-base md:text-lg text-gray-400 text-center mx-auto mb-20"
+          className="text-gray-400 max-w-2xl md:max-w-4xl lg:max-w-5xl text-balance"
         >
-          Cinematic, high-performance sites designed to make your work impossible to ignore.
+        <div className="flex flex-col items-center">  
+        Cinematic, high-performance sites designed to make your work impossible to ignore.
+        </div>
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-5"
+          className="flex flex-col sm:flex-row gap-6 justify-center"
         >
           <a
             href="#work"
@@ -55,17 +56,12 @@ export default function Hero() {
           >
             Start a Project
           </a>
+
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.55 }}
-          className="text-xs md:text-sm uppercase tracking-[0.2em] text-neutral-500 text-center"
-        >
-          Limited builds this month
-        </motion.p>
       </div>
+
+      
     </section>
   )
 }
