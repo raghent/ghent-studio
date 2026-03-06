@@ -21,7 +21,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-2xl md:max-w-4xl lg:max-w-5xl text-balancext-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
+          className="md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
         >
           Portfolio websites for modern creatives.
         </motion.h1>
@@ -60,6 +60,10 @@ export default function Hero() {
         </motion.div>
 
       </div>
+
+      <p className="mt-6 text-sm text-gray-500">
+        Limited build slots available this month.
+      </p>
     </section>
   )
 }
