@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-gray-400 text-lg md:text-xl max-w-5xl mx-auto mb-12"
+          className="text-gray-400 text-lg md:text-xl justify-center max-w-5xl mx-auto mb-12"
         >
           Cinematic, high-performance sites designed to make your work impossible to ignore.
         </motion.p>
