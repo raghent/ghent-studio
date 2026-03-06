@@ -17,7 +17,7 @@ export default function Hero() {
       <ParticleField />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center">
+      <div className="relative z-10 flex flex-col items-center text-center max-w-6xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="max-w-5xl text-base md:text-lg text-gray-400 text-balance mb-10"
+          className="max-w-5xl text-base md:text-lg text-gray-400 text-center text-balance mb-12"
         >
           Cinematic, high-performance sites designed to make your work impossible to ignore.
         </motion.p>
@@ -40,7 +40,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center mb-4"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-5"
         >
           <a
             href="#work"
@@ -58,10 +58,10 @@ export default function Hero() {
         </motion.div>
 
         <motion.p
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.55 }}
-          className="text-sm uppercase tracking-[0.2em] text-neutral-500"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.55 }}
+          className="text-xs md:text-sm uppercase tracking-[0.2em] text-neutral-500 text-center"
         >
           Limited builds this month
         </motion.p>
