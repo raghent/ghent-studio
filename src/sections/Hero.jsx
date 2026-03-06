@@ -61,9 +61,7 @@ export default function Hero() {
 
       </div>
 
-      <p className="mt-6 text-sm text-gray-500">
-        Limited build slots available this month.
-      </p>
+      
     </section>
   )
 }
