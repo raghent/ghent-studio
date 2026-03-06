@@ -3,7 +3,7 @@ import ParticleField from "./components/ParticleField"
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
+    <section className="relative pt-32 pb-16 min-h-screen flex items-center justify-center px-8 md:px-20 bg-black text-white overflow-hidden">
       {/* Glow Background */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="max-w-5xl text-base md:text-lg text-gray-400 text-center text-balance mb-12"
+          className="max-w-2xl text-base md:text-lg text-gray-400 text-center mx-auto mb-20"
         >
           Cinematic, high-performance sites designed to make your work impossible to ignore.
         </motion.p>
