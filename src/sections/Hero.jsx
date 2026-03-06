@@ -21,7 +21,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
+          className="max-w-2xl md:max-w-4xl lg:max-w-5xl text-balancext-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
         >
           Portfolio websites for modern creatives.
         </motion.h1>
@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-gray-400 text-lg md:text-xl justify-center max-w-5xl mx-auto mb-12"
+          className="text-gray-400 max-w-2xl md:max-w-4xl lg:max-w-5xl text-balance"
         >
         <div className="flex flex-col items-center">  
         Cinematic, high-performance sites designed to make your work impossible to ignore.
